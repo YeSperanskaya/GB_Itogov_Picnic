@@ -1,6 +1,6 @@
 package model;
 
-public class InputArrayString {
+public class CreateArrayFromFile {
 
     /**
      * Создание массива из строки

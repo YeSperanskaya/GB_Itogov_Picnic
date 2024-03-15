@@ -1,24 +1,22 @@
 package service;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class WorkWithFile {
     public String readFile() throws IOException {
         if (isHaveText()) {
-            BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
+            File file = new File("E:/evgeniya's/programmmer/gb/VirtualPicnick/GB_Virtual_Picknick", "input.txt");
+            BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine();
-            while (line != null) {
-                System.out.println(line);
-                line = reader.readLine();
-            }
             reader.close();
-            System.out.println("Выполнен readFile() печать имеющегося массива");
             return line;
         } else {
             System.out.println("вернулся null");
-            return null;
+            String str = "-1";
+            return str;
 
         }
     }

@@ -1,5 +1,6 @@
 import controller.Controller;
 import model.MapOfRepeatedWord;
+import service.CounterArray;
 import service.WorkWithFile;
 
 import java.io.IOException;
@@ -32,12 +33,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-//        Controller controller = new Controller();
-//        controller.start();
-        String[] str = new String[] {"vsdfsdf", "g", "g"};
-        MapOfRepeatedWord mapOfRepeatedWord =  new MapOfRepeatedWord(str);
-        System.out.println(mapOfRepeatedWord.toString());
-
+        Controller controller = new Controller();
+        controller.start();
 
 
 

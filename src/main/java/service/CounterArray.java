@@ -71,4 +71,11 @@ public class CounterArray {
     public int getCountWords() {
         return countWords;
     }
+
+    @Override
+    public String toString() {
+        return  "Длинна самого длинного слова: " + lengthLongestWord +
+                ", самое длинное слово:'" + longestWord + '\'' +
+                ", количество слов в файле: " + countWords + ".";
+    }
 }
