@@ -8,7 +8,7 @@ import java.io.IOException;
 public class WorkWithFile {
     public String readFile() throws IOException {
         if (isHaveText()) {
-            File file = new File("E:/evgeniya's/programmmer/gb/VirtualPicnick/GB_Virtual_Picknick", "input.txt");
+            File file = new File("src/main/input.txt");
             BufferedReader reader = new BufferedReader(new FileReader(file));
             String line = reader.readLine();
             reader.close();
@@ -23,7 +23,7 @@ public class WorkWithFile {
 
     private boolean isHaveText() {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("src/main/input.txt"));
             String line = reader.readLine();
             reader.close();
             return true;
